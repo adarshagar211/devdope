@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DEV 'R' DOPE</title>
+
+    <!-- Tailwind -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+
+    <meta name="generator" content="DEV R DOPE Website Generator">
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+</head>
+
+<body class="font-Montserrat">
+
+    <nav class="nav-main">
+    <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+        <a href="#" class="flex items-center space-x-3">
+            <span class="text-xl lg:text-3xl font-extrabold">DEVDOPE</span>
+        </a>
+
+        <div class="hidden md:block">
+            <ul class="font-medium flex md:space-x-8">
+                <li><a href="#" class="text-white text-lg">HOME</a></li>
+                <li><a href="#about" class="text-white text-lg">ABOUT</a></li>
+                <li><a href="#tokenomics" class="text-white text-lg">TOKENOMICS</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+    <div class="my-10 h-1 w-full bg-white opacity-50"></div>
+
+
+    <section id="hero" class="flex flex-wrap justify-center items-center text-white text-center py-10 hero-section">
+    <div class="container flex flex-col-reverse md:flex-row justify-center items-center">
+        <div class="main-head w-full md:w-1/2 flex flex-col items-center gap-4 ml-0">
+
+            <h1 class="text-3xl lg:text-5xl font-extrabold mt-[-10px]">
+                Welcome to<br>
+                <span class="text-3xl lg:text-7xl font-extrabold">DEVDOPE</span>
+            </h1>
+
+            <br><br>
+
+            <a href="https://raydium.io/swap/" class="mt-20 inline-block">
+                <button class="text-white w-full bg-black hover:bg-#000000 hover:text-white border border-white rounded-full text-lg px-8 py-3 transition">
+                    BUY ON Raydium
+                </button>
+            </a>
+
+            <div class="flex justify-center items-center gap-x-6 w-full ml-10 mt-6">
+                <p class="text-white"><strong>CA:</strong></p>
+                <div class="text-white border border-white rounded-lg flex-1">
+                    <input id="contract-copy-input" type="text"
+                           class="py-3 px-4 block rounded-lg w-full bg-gray-900 border-gray-700"
+                           value="SoL4NA123TOKENxxx">
+                </div>
+                <button class="js-clipboard p-3 rounded-lg border border-white bg-#000000 text-white"
+                        data-clipboard-target="#contract-copy-input" onclick="changeCopyText(this)">
+                    COPY
+                </button>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+    <div class="my-10 h-1 w-full bg-white opacity-50"></div>
+
+
+    <section id="about" class="py-16">
+    <div class="flex flex-col items-center text-white mx-5 lg:mx-20">
+
+        <p class="text-4xl lg:text-5xl font-extrabold text-center mb-12 lg:mb-16">
+            About DEVDOPE
+        </p>
+
+        <div class="flex flex-col lg:flex-row items-center justify-between gap-12 lg:gap-16 w-full">
+
+            <div class="w-full lg:w-2/5 flex justify-center lg:justify-start">
+                <img src="images/about-image.jpg"
+                     class="rounded-xl w-full max-w-md lg:max-w-lg main-logo shadow-2xl"
+                     alt="DEVDOPE">
+            </div>
+
+            <div class="w-full lg:w-3/5 text-gray-300 text-lg lg:text-xl leading-relaxed lg:leading-loose">
+                <p class="mb-6">
+                    DEVDOPE is a next-gen meme token.
+                </p>
+
+                <div class="flex items-center mb-3"><span class="text-white mr-3">✓</span><span>Fast Website</span></div><div class="flex items-center mb-3"><span class="text-white mr-3">✓</span><span>Neon UI</span></div><div class="flex items-center mb-3"><span class="text-white mr-3">✓</span><span>Tokenomics Ready</span></div>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+
+    <div class="my-10 h-1 w-full bg-white opacity-50"></div>
+
+
+    <section id="tokenomics" class="text-white py-16">
+    <div class="container mx-auto text-center">
+
+        <h1 class="text-5xl lg:text-7xl font-extrabold mb-8 text-gradient">Tokenomics</h1>
+
+        <div class="grid lg:grid-cols-3 gap-8 m-10">
+
+            <!-- Total Supply -->
+            <div class="p-6 border-4 border-white rounded-lg neon-glow-effect">
+                <h1 class="text-3xl font-bold">Total Supply</h1>
+                <div class="pt-5 space-y-4 pl-4 text-lg text-left">
+                    <p>✔️ 1,000,000,000</p>
+                    <p>✔️ Initial Liquidity on Raydium</p>
+                </div>
+            </div>
+
+            <!-- Token Safety -->
+            <div class="p-6 border-4 border-white rounded-lg neon-glow-effect">
+                <h1 class="text-3xl font-bold">Token Safety</h1>
+                <div class="pt-5 pl-4 space-y-5 text-lg text-left">
+                    <p>✔ Disabled</p>
+                    <p>✔️ LP Frozen</p>
+                    <p>✔ Burned</p>
+                    <p>⭐ Safety Score: 95/100</p>
+                </div>
+            </div>
+
+            <!-- Contract Address -->
+            <div class="p-6 border-4 border-white rounded-lg neon-glow-effect">
+                <h1 class="text-3xl font-bold">CA</h1>
+                <div class="flex items-center gap-x-3 mt-5">
+                    <input type="text"
+                           class="py-3 px-4 w-full rounded-lg bg-black text-white"
+                           value="SoL4NA123TOKENxxx">
+                    <button class="js-clipboard p-3 rounded-lg border text-white bg-#000000"
+                            onclick="changeCopyText(this)">
+                        Copy
+                    </button>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+
+    <div class="my-10 h-1 w-full bg-white opacity-50"></div>
+
+
+    <footer class="bg-gray-900 text-white py-10 text-center relative">
+
+    <div class="flex justify-center py-6 gap-8 mb-6">
+        
+    </div>
+
+    <div class="flex flex-col items-center gap-3 mb-6">
+        <span class="text-sm">Contact: </span>
+        <img src="images/logo.png" class="h-12 w-12 rounded-full" alt="DEVDOPE">
+        <span class="text-sm">© 2025 DEVDOPE — All rights reserved.</span>
+    </div>
+
+</footer>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
